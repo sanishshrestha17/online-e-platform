@@ -1,0 +1,236 @@
+*{
+    margin:5px;
+    padding: 5px;
+}
+.inner-banner {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.inner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 150px;
+
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    z-index: 1;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 30px;
+    position: relative;
+    
+
+
+}
+.nav-links ul li a.red{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid red;
+    background: red;
+    padding: 12px 34px;
+
+
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #e0e719;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+    
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+}
+.text-box h1{
+    font-size: 60px;
+
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 19px;
+    color: white;
+
+}
+.title{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 24px;
+    font-style: italic;
+}
+.header{
+    font-size: 25px;
+    text-align: justify;
+    
+}
+.m{
+    font-weight: bold;
+    font-style: italic;
+}
+.divider{
+    display: flex;
+
+}
+.hello{
+    border: 2px solid;
+    
+
+}
+.hi{
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    border: 2px solid;
+    background-image: url(gallery/mangofounderjpg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.hi p{
+    color: rgb(221, 11, 11);
+    font-size: 25px;
+    font-style: italic;
+    margin-left: 80px;
+    margin-top: 250px;
+    padding: 25px;
+
+}
+.hello span.i{
+    font-size: 30px;
+    vertical-align: center;
+    font-style: italic;
+}
+.hello span.j{
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: underline;
+    
+}
+.hello span.k{
+    font-size: 19px;
+    text-align: justify;
+}
+.fly{
+    border: 2px solid;
+    margin: 10px;
+    padding: 10px;
+
+}
+.fly span.p{
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: underline;
+}
+.fly span.u{
+    font-size: 19px;
+    text-align: justify;
+}
+.yep{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: red;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+.footer{
+    background-color: black;
+    height: 400px;
+    display: flex;
+ 
+}
+.About{
+    margin: 5px;
+}
+.About p.a{
+    color: white;
+    font-size: 35px;
+    padding: 20px;
+    font-weight: bold;
+}
+.About p.b{
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+.contact p.c{
+    color: white;
+    font-size: 35px;
+    padding: 20px;
+    font-weight: bold;
+}
+.contact p.f{
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+.legal p.i{
+    color: white;
+    font-size: 35px;
+    padding: 20px;
+    font-weight: bold;
+}
+.legal p.e{
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}.lo img{
+    height: 350px;
+    width: 750px;
+    padding:20px;
+}
+.last {
+    background-color: black;
+    border-top: 1px solid white;
+}
+.last p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+
+}

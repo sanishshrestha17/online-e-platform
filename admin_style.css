@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header.admin-header {
+  background-color: #3b5998;
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.admin-header .logo img {
+  width: 150px;
+}
+
+header.admin-header .logout a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ff6b6b;
+  transition: background-color 0.3s;
+}
+
+header.admin-header .logout a:hover {
+  background-color: #ff3b3b;
+}
+
+/* Main Section */
+main.admin-main {
+  margin: 20px;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.welcome-section h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Enrollments Table */
+.enrollments-table {
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.enrollments-table h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.enrollments-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.enrollments-table table th,
+.enrollments-table table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.enrollments-table table th {
+  background-color: #3b5998;
+  color: white;
+}
+
+.enrollments-table table td {
+  border-bottom: 1px solid #ddd;
+}
+
+.enrollments-table table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Buttons */
+.btn-small {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.btn-small:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #ff6b6b;
+}
+
+.delete-btn:hover {
+  background-color: #ff3b3b;
+}
+
+.actions a {
+  margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .enrollments-table table {
+      font-size: 14px;
+  }
+
+  .enrollments-table table th, 
+  .enrollments-table table td {
+      padding: 8px;
+  }
+}

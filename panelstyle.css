@@ -1,0 +1,117 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #f4f4f4;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header Styles */
+.admin-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #2c2c2c, #1a1a1a);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.admin-header .logo img {
+  height: 50px;
+}
+
+.admin-header .logout a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #444;
+  transition: 0.3s ease;
+}
+
+.admin-header .logout a:hover {
+  background-color: #222;
+}
+
+/* Main Content */
+.admin-main {
+  margin-top: 100px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 1200px;
+}
+
+.admin-main h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.welcome-section {
+  margin-bottom: 30px;
+}
+
+.welcome-section h2 {
+  font-size: 20px;
+  color: #f4f4f4;
+}
+
+/* Button Container */
+.button-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.button-container .btn {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to right, #444, #222);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button-container .btn:hover {
+  background: linear-gradient(to right, #666, #444);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .button-container {
+      flex-direction: column;
+  }
+
+  .button-container .btn {
+      width: 80%;
+      margin: 10px 0;
+  }
+}

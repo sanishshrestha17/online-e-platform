@@ -1,0 +1,18 @@
+*{
+    margin: 10px;
+    padding: 0px;
+}
+img.p{
+    height: 200px;
+    width: 1440px;
+}
+img.i{
+    width: 150px;
+    height: auto;
+
+        
+}
+.a {
+    flex: 1;
+   text-align: right;
+}

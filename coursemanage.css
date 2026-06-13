@@ -1,0 +1,169 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #f4f4f4;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styles */
+.admin-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #2c2c2c, #1a1a1a);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.admin-header .logo img {
+  height: 50px;
+}
+
+.admin-header .logout a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #444;
+  transition: 0.3s ease;
+}
+
+.admin-header .logout a:hover {
+  background-color: #222;
+}
+
+/* Main Content */
+.admin-main {
+  margin-top: 100px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 1200px;
+}
+
+.admin-main h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Table Styles */
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+  width: 100%; /* Make the table container wider */
+}
+
+table {
+  width: 100%; /* Make the table fill the container */
+  max-width: 1200px; /* Optional: Set a maximum width */
+  margin: 0 auto; /* Center the table */
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #444;
+}
+
+table th {
+  background: #333;
+  color: #f4f4f4;
+}
+
+table tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Buttons */
+table td a.btn-small {
+  margin-right: 15px; /* Increase space between Edit and Delete buttons */
+  display: inline-block; /* Keep buttons inline */
+}
+
+.button-container {
+  margin: 20px 0;
+}
+
+.btn,
+.btn-small {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to right, #444, #222);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover,
+.btn-small:hover {
+  background: linear-gradient(to right, #666, #444);
+  transform: scale(1.05);
+}
+
+.btn-small {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.delete-btn {
+  background: linear-gradient(to right, #922, #600);
+}
+
+.delete-btn:hover {
+  background: linear-gradient(to right, #c44, #822);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .button-container {
+      flex-direction: column;
+  }
+
+  .btn {
+      width: 100%;
+      margin: 15px 0;
+  }
+}
+
+/* Logo Link Hover Effect */
+.logo a img {
+  transition: transform 0.3s ease;
+}
+
+.logo a:hover img {
+  transform: scale(1.1); /* Slight zoom effect */
+}

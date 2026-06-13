@@ -1,0 +1,105 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  background-color: #2d87f0;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+a.btn:hover {
+  background-color: #c30812;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.chapter-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.chapter-list li {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.chapter-list li:hover {
+  transform: translateY(-5px);
+}
+
+.chapter-list h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.chapter-list p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.chapter-list .btn {
+  background-color: #2d87f0;
+  margin-top: 10px;
+}
+
+.chapter-list .btn:hover {
+  background-color: #1a66c1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 1.5rem;
+  }
+
+  a.btn {
+      padding: 8px 15px;
+  }
+
+  .chapter-list li {
+      padding: 12px;
+  }
+
+  .chapter-list h2 {
+      font-size: 1.4rem;
+  }
+}

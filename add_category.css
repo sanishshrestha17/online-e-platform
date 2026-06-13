@@ -1,0 +1,140 @@
+/* General Page Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.admin-header .logo img {
+  height: 50px;
+}
+
+/* Updated Logout Styling */
+.admin-header .logout {
+  position: absolute;
+  top: 50%;
+  right: 90px;
+  transform: translateY(-50%);
+}
+
+.admin-header .logout a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #dc3545;
+  transition: background-color 0.3s;
+}
+
+.admin-header .logout a:hover {
+  background-color: #c82333;
+}
+
+/* Main Content Section */
+.admin-main {
+  margin-top: 100px; /* Space for the fixed header */
+  text-align: center;
+  padding: 20px;
+}
+
+.admin-main h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.success-message, .error-message {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.success-message {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.error-message {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Add Category Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #333;
+  color: #fff;
+}
+
+form button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+/* Button Container */
+.button-container {
+  margin-top: 20px;
+}
+
+.button-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button-container a:hover {
+  background-color: #0056b3;
+}

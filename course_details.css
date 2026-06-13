@@ -1,0 +1,87 @@
+/* Header Section */
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.user-header .logo img {
+  height: 50px;
+}
+
+.user-header .nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.user-header .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.user-header .btn:hover {
+  background-color: #0056b3;
+}
+
+.user-header .logout-btn {
+  background-color: #dc3545;
+}
+
+.user-header .logout-btn:hover {
+  background-color: #c82333;
+}
+
+/* Course Details Styling */
+.course-details {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.course-details img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.course-details h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.course-details p {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.course-details .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.course-details .btn:hover {
+  background-color: #0056b3;
+}

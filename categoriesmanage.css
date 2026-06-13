@@ -1,0 +1,132 @@
+/* Body Background */
+body {
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Header Section */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+}
+
+.admin-header .logo a img {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.admin-header .logo a:hover img {
+  transform: scale(1.1);  /* Zoom effect */
+}
+
+.admin-header .logout a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #333;  /* Dark background */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-header .logout a:hover {
+  background-color: #444;  /* Lighter on hover */
+}
+
+/* Main Content */
+.admin-main {
+  padding: 20px;
+}
+
+.admin-main h1 {
+  color: #f1c40f; /* Gold color for headings */
+  text-align: center;
+}
+
+/* Button Container */
+.button-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #333;  /* Dark Background */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #444;  /* Slightly lighter for hover effect */
+}
+
+/* Button for small actions */
+.btn-small {
+  background-color: #555;
+  padding: 5px 10px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-small:hover {
+  background-color: #666;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Table Container */
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto; /* To make the table scrollable if needed */
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background for the table */
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px 20px; /* Increased padding for better readability */
+  text-align: center;
+  border: 1px solid #444; /* Darker border */
+  color: white; /* White text for visibility */
+}
+
+table th {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background for table headers */
+  font-weight: bold;
+  color: #f1c40f; /* Gold color for headers */
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background for even rows */
+}
+
+table tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background for odd rows */
+}
+
+table tr:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}

@@ -1,0 +1,131 @@
+/* General Body Styling */
+body {
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.admin-header .logo a img {
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.admin-header .logo a:hover img {
+  transform: scale(1.1);  /* Logo Zoom effect */
+}
+
+.admin-header .logout a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #34495e;  /* Dark Background */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.admin-header .logout a:hover {
+  background-color: #5d6d7e;  /* Lighter on hover */
+}
+
+/* Main Content */
+.admin-main {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(44, 62, 80, 0.8); /* Slight transparency for the background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.admin-main h1 {
+  color: #f39c12; /* Golden Yellow */
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form label {
+  font-size: 16px;
+  color: #ecf0f1;
+  font-weight: 600;
+}
+
+form input[type="text"],
+form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #7f8c8d;
+  border-radius: 8px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  border-color: #f39c12; /* Highlight with gold */
+}
+
+form button {
+  background-color: #2ecc71; /* Green */
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #27ae60; /* Darker Green */
+}
+
+/* Button Container */
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button-container .btn {
+  background-color: #2980b9;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button-container .btn:hover {
+  background-color: #3498db;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #ecf0f1;
+}
